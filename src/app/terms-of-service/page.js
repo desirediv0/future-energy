@@ -297,7 +297,7 @@ These Terms, together with our Privacy Policy and any other legal notices publis
             {/* Table of Contents */}
             <section className="py-10 bg-white">
                 <div className="container-custom">
-                    <div className="bg-gray-50 rounded-2xl p-8">
+                    <div className="bg-gray-50 rounded-lg p-8">
                         <h2 className="text-xl font-bold text-energy-blue mb-6">Table of Contents</h2>
                         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
                             {sections.map((section, index) => (
@@ -406,9 +406,9 @@ These Terms, together with our Privacy Policy and any other legal notices publis
             {/* Acknowledgment Box */}
             <section className="py-10 bg-gray-50">
                 <div className="container-custom">
-                    <div className="max-w-3xl mx-auto bg-white rounded-2xl p-8 shadow-lg border-l-4 border-energy-blue">
+                    <div className="max-w-3xl mx-auto bg-white rounded-lg p-8 shadow-lg border-l-4 border-energy-blue">
                         <div className="flex items-start gap-4">
-                            <div className="w-12 h-12 bg-energy-blue/10 rounded-xl flex items-center justify-center flex-shrink-0">
+                            <div className="w-12 h-12 bg-energy-blue/10 rounded-lg flex items-center justify-center flex-shrink-0">
                                 <svg className="w-6 h-6 text-energy-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                                 </svg>
@@ -430,7 +430,7 @@ These Terms, together with our Privacy Policy and any other legal notices publis
             <section className="py-16 bg-energy-blue text-white">
                 <div className="container-custom">
                     <div className="max-w-3xl mx-auto text-center">
-                        <div className="w-16 h-16 bg-white/10 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                        <div className="w-16 h-16 bg-white/10 rounded-lg flex items-center justify-center mx-auto mb-6">
                             <svg className="w-8 h-8 text-energy-orange" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                             </svg>

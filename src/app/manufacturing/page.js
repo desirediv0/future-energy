@@ -107,7 +107,7 @@ export default function ManufacturingPage() {
                 <div className="container-custom">
                     <div className="grid lg:grid-cols-2 gap-16 items-center">
                         <div className="relative">
-                            <div className="rounded-2xl overflow-hidden shadow-2xl">
+                            <div className="rounded-lg overflow-hidden shadow-2xl">
                                 <Image
                                     src="/card2.jpg"
                                     alt="Future Energy Manufacturing Plant"
@@ -116,7 +116,7 @@ export default function ManufacturingPage() {
                                     className="w-full h-auto object-cover"
                                 />
                             </div>
-                            <div className="absolute -bottom-6 -right-6 bg-energy-green text-white p-6 rounded-xl shadow-xl hidden md:block">
+                            <div className="absolute -bottom-6 -right-6 bg-energy-green text-white p-6 rounded-lg shadow-xl hidden md:block">
                                 <svg className="w-10 h-10 mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
@@ -136,9 +136,9 @@ export default function ManufacturingPage() {
                                 Manufacturing Address
                             </h2>
 
-                            <div className="bg-gray-50 rounded-2xl p-8 mb-8 border-l-4 border-energy-orange">
+                            <div className="bg-gray-50 rounded-lg p-8 mb-8 border-l-4 border-energy-orange">
                                 <div className="flex items-start gap-4">
-                                    <div className="w-12 h-12 bg-energy-orange/10 rounded-xl flex items-center justify-center flex-shrink-0">
+                                    <div className="w-12 h-12 bg-energy-orange/10 rounded-lg flex items-center justify-center flex-shrink-0">
                                         <svg className="w-6 h-6 text-energy-orange" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
@@ -164,7 +164,7 @@ export default function ManufacturingPage() {
 
                             <div className="grid grid-cols-2 gap-4">
                                 {facilityHighlights.slice(0, 4).map((item, index) => (
-                                    <div key={item.label} className="bg-white rounded-xl p-4 shadow-sm border border-gray-100">
+                                    <div key={item.label} className="bg-white rounded-lg p-4 shadow-sm border border-gray-100">
                                         <div className="text-xl font-bold text-energy-green">{item.value}</div>
                                         <div className="text-gray-500 text-sm">{item.label}</div>
                                     </div>
@@ -187,9 +187,9 @@ export default function ManufacturingPage() {
                         {capabilities.map((capability, index) => (
                             <div
                                 key={capability.title}
-                                className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group"
+                                className="bg-white rounded-lg p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group"
                             >
-                                <div className="w-16 h-16 bg-energy-blue/10 rounded-2xl flex items-center justify-center mb-6 text-energy-blue group-hover:bg-energy-blue group-hover:text-white transition-colors">
+                                <div className="w-16 h-16 bg-energy-blue/10 rounded-lg flex items-center justify-center mb-6 text-energy-blue group-hover:bg-energy-blue group-hover:text-white transition-colors">
                                     {capability.icon}
                                 </div>
                                 <h3 className="text-xl font-bold text-energy-blue mb-3">{capability.title}</h3>
@@ -215,7 +215,7 @@ export default function ManufacturingPage() {
                         {processSteps.map((step, index) => (
                             <div
                                 key={step.step}
-                                className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 hover:bg-white/20 transition-colors relative overflow-hidden"
+                                className="bg-white/10 backdrop-blur-sm rounded-lg p-8 hover:bg-white/20 transition-colors relative overflow-hidden"
                             >
                                 <div className="absolute top-4 right-4 text-6xl font-bold text-white/10">
                                     {step.step}
@@ -245,7 +245,7 @@ export default function ManufacturingPage() {
                         {['/card3.jpg', '/card4.jpg', '/card5.jpg', '/card6.jpg'].map((img, index) => (
                             <div
                                 key={index}
-                                className="relative rounded-xl overflow-hidden shadow-lg group cursor-pointer aspect-square"
+                                className="relative rounded-lg overflow-hidden shadow-lg group cursor-pointer aspect-square"
                             >
                                 <Image
                                     src={img}
@@ -265,7 +265,7 @@ export default function ManufacturingPage() {
                 <div className="container-custom">
                     <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
                         {facilityHighlights.map((item, index) => (
-                            <div key={item.label} className="bg-white rounded-xl p-6 text-center shadow-lg">
+                            <div key={item.label} className="bg-white rounded-lg p-6 text-center shadow-lg">
                                 <div className="text-2xl md:text-3xl font-bold text-energy-green mb-2">{item.value}</div>
                                 <div className="text-gray-500 text-sm">{item.label}</div>
                             </div>
@@ -281,7 +281,7 @@ export default function ManufacturingPage() {
                         <p className="text-white/80">Visit our manufacturing facility at IMT Manesar, Gurugram</p>
                     </div>
 
-                    <div className="bg-white rounded-2xl overflow-hidden shadow-2xl">
+                    <div className="bg-white rounded-lg overflow-hidden shadow-2xl">
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3510.571285349388!2d76.9333082752791!3d28.371808275808178!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d3dcf3b437681%3A0x6191e66e87c7bbf3!2sFuture%20Energy%20Plot%20No%2018-19!5e0!3m2!1sen!2sin!4v1766386636701!5m2!1sen!2sin"
                             width="100%"

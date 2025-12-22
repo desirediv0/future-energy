@@ -111,7 +111,7 @@ export default function GlobalPresencePage() {
                             alt="Global Presence Map"
                             width={1200}
                             height={600}
-                            className="w-full h-auto object-cover opacity-30"
+                            className="w-full h-auto object-cover opacity-30 max-h-[500px]"
                         />
                         <div className="absolute inset-0 flex items-center justify-center">
                             <div className="text-center">
@@ -122,12 +122,6 @@ export default function GlobalPresencePage() {
                                 <p className="text-gray-600">Delivering energy solutions worldwide</p>
                             </div>
                         </div>
-
-                        {/* Animated Dots representing countries */}
-                        <div className="absolute top-1/4 left-1/4 w-4 h-4 bg-energy-orange rounded-full animate-ping"></div>
-                        <div className="absolute top-1/3 right-1/3 w-4 h-4 bg-energy-green rounded-full animate-ping delay-300"></div>
-                        <div className="absolute bottom-1/3 left-1/2 w-4 h-4 bg-energy-blue rounded-full animate-ping delay-500"></div>
-                        <div className="absolute top-1/2 right-1/4 w-4 h-4 bg-energy-orange rounded-full animate-ping delay-700"></div>
                     </div>
                 </div>
             </section>
@@ -145,9 +139,9 @@ export default function GlobalPresencePage() {
                         {regions.map((region) => (
                             <div
                                 key={region.name}
-                                className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow"
+                                className="bg-white rounded-lg p-8 shadow-lg hover:shadow-xl transition-shadow"
                             >
-                                <div className={`w-16 h-16 rounded-2xl flex items-center justify-center mb-6 ${region.color === 'energy-orange'
+                                <div className={`w-16 h-16 rounded-lg flex items-center justify-center mb-6 ${region.color === 'energy-orange'
                                     ? 'bg-energy-orange/10 text-energy-orange'
                                     : region.color === 'energy-green'
                                         ? 'bg-energy-green/10 text-energy-green'
@@ -198,9 +192,9 @@ export default function GlobalPresencePage() {
                         {exportHighlights.map((highlight) => (
                             <div
                                 key={highlight.title}
-                                className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 text-center hover:bg-white/20 transition-colors"
+                                className="bg-white/10 backdrop-blur-sm rounded-lg p-8 text-center hover:bg-white/20 transition-colors"
                             >
-                                <div className="w-16 h-16 bg-energy-orange rounded-2xl flex items-center justify-center mx-auto mb-6 text-white">
+                                <div className="w-16 h-16 bg-energy-orange rounded-lg flex items-center justify-center mx-auto mb-6 text-white">
                                     {highlight.icon}
                                 </div>
                                 <h3 className="text-xl font-bold mb-3 text-white">{highlight.title}</h3>
@@ -217,7 +211,7 @@ export default function GlobalPresencePage() {
                     <div className="grid lg:grid-cols-2 gap-16 items-center">
                         {/* Left - Image */}
                         <div className="relative">
-                            <div className="rounded-2xl overflow-hidden shadow-2xl">
+                            <div className="rounded-lg overflow-hidden shadow-2xl">
                                 <Image
                                     src="/card7.jpg"
                                     alt="Global Partnership"
@@ -226,7 +220,7 @@ export default function GlobalPresencePage() {
                                     className="w-full h-auto object-cover"
                                 />
                             </div>
-                            <div className="absolute -bottom-6 -right-6 bg-energy-green text-white p-6 rounded-xl shadow-xl hidden md:block">
+                            <div className="absolute -bottom-6 -right-6 bg-energy-green text-white p-6 rounded-lg shadow-xl hidden md:block">
                                 <div className="text-3xl font-bold">50+</div>
                                 <div className="text-white/80 text-sm">Global Partners</div>
                             </div>

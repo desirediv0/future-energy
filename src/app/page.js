@@ -86,7 +86,7 @@ export default function HomePage() {
         <div className="container-custom">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="relative">
-              <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+              <div className="relative rounded-lg overflow-hidden shadow-2xl">
                 <Image
                   src="/card1.jpg"
                   alt="Future Energy Manufacturing"
@@ -95,7 +95,7 @@ export default function HomePage() {
                   className="w-full h-auto object-cover"
                 />
               </div>
-              <div className="absolute -bottom-6 -right-6 bg-energy-orange text-white p-6 rounded-2xl shadow-xl hidden md:block">
+              <div className="absolute -bottom-6 -right-6 bg-energy-orange text-white p-6 rounded-lg shadow-xl hidden md:block">
                 <div className="text-3xl font-bold">15+</div>
                 <div className="text-white/80 text-sm">Years of Excellence</div>
               </div>
@@ -225,7 +225,7 @@ export default function HomePage() {
 
             {/* Right - Image */}
             <div className="relative">
-              <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+              <div className="relative rounded-lg overflow-hidden shadow-2xl">
                 <Image
                   src="/card4.jpg"
                   alt="IT 700 Patent Product"
@@ -257,7 +257,7 @@ export default function HomePage() {
             {['40Ah', '100Ah', '200Ah', '350Ah', '500Ah'].map((capacity) => (
               <div
                 key={capacity}
-                className="bg-gray-50 rounded-2xl p-6 text-center hover:bg-energy-green/10 transition-colors group"
+                className="bg-gray-50 rounded-lg p-6 text-center hover:bg-energy-green/10 transition-colors group"
               >
                 <div className="text-energy-green font-bold text-xl mb-2">12V</div>
                 <div className="text-3xl font-bold text-energy-blue group-hover:text-energy-green transition-colors">{capacity}</div>
@@ -289,7 +289,7 @@ export default function HomePage() {
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             {stats.map((stat) => (
-              <div key={stat.label} className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 text-center hover:bg-white/20 transition-colors">
+              <div key={stat.label} className="bg-white/10 backdrop-blur-sm rounded-lg p-8 text-center hover:bg-white/20 transition-colors">
                 <div className={`text-4xl md:text-5xl font-bold mb-2 ${stat.color === 'green' ? 'text-energy-green' : stat.color === 'orange' ? 'text-energy-orange' : 'text-white'}`}>
                   {stat.value}
                 </div>
@@ -316,7 +316,7 @@ export default function HomePage() {
               </h2>
 
               {/* Address */}
-              <div className="bg-gray-50 rounded-xl p-6 mb-6 border-l-4 border-energy-orange">
+              <div className="bg-gray-50 rounded-lg p-6 mb-6 border-l-4 border-energy-orange">
                 <div className="flex items-start gap-3">
                   <HiLocationMarker className="w-6 h-6 text-energy-orange flex-shrink-0 mt-1" />
                   <div>
@@ -343,16 +343,16 @@ export default function HomePage() {
 
             {/* Right - Images Grid */}
             <div className="grid grid-cols-2 gap-4">
-              <div className="rounded-xl overflow-hidden shadow-lg">
+              <div className="rounded-lg overflow-hidden shadow-lg">
                 <Image src="/card2.jpg" alt="Manufacturing" width={300} height={200} className="w-full h-48 object-cover" />
               </div>
-              <div className="rounded-xl overflow-hidden shadow-lg mt-8">
+              <div className="rounded-lg overflow-hidden shadow-lg mt-8">
                 <Image src="/card3.jpg" alt="Production" width={300} height={200} className="w-full h-48 object-cover" />
               </div>
-              <div className="rounded-xl overflow-hidden shadow-lg">
+              <div className="rounded-lg overflow-hidden shadow-lg">
                 <Image src="/card5.jpg" alt="Quality" width={300} height={200} className="w-full h-48 object-cover" />
               </div>
-              <div className="rounded-xl overflow-hidden shadow-lg mt-8">
+              <div className="rounded-lg overflow-hidden shadow-lg mt-8">
                 <Image src="/card6.jpg" alt="Facility" width={300} height={200} className="w-full h-48 object-cover" />
               </div>
             </div>

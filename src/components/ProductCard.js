@@ -20,7 +20,7 @@ export default function ProductCard({
 
     return (
         <div
-            className={`group relative bg-white rounded-2xl overflow-hidden card-hover ${featured
+            className={`group relative bg-white rounded-lg overflow-hidden card-hover ${featured
                 ? 'border-2 border-energy-green shadow-lg'
                 : 'border border-gray-200 shadow-md'
                 }`}
@@ -39,7 +39,7 @@ export default function ProductCard({
                 className={`p-6 ${featured ? 'bg-energy-green' : 'bg-energy-blue'
                     } transition-colors duration-300 group-hover:bg-energy-green`}
             >
-                <div className="w-16 h-16 bg-white/20 rounded-xl flex items-center justify-center text-white">
+                <div className="w-16 h-16 bg-white/20 rounded-lg flex items-center justify-center text-white">
                     {icon || defaultIcons.battery}
                 </div>
             </div>

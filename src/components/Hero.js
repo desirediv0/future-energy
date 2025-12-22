@@ -140,33 +140,33 @@ export default function Hero({
                                         </div>
 
                                         {/* Inner Frame */}
-                                        <div className="absolute top-6 left-4 right-4 bottom-4 rounded-2xl border-2 border-[#1E3A5F]/30 overflow-hidden">
+                                        <div className="absolute top-6 left-4 right-4 bottom-4 rounded-lg border-2 border-[#1E3A5F]/30 overflow-hidden">
 
                                             {/* Energy Bars Container */}
                                             <div className="absolute inset-3 flex flex-col justify-end gap-3">
                                                 {/* Energy Bar 1 - Full */}
-                                                <div className="relative h-14 rounded-xl overflow-hidden">
+                                                <div className="relative h-14 rounded-lg overflow-hidden">
                                                     <div className="absolute inset-0 bg-gradient-to-r from-[#1E8E3E] via-[#22C55E] to-[#1E8E3E] animate-pulse"></div>
                                                     <div className="absolute inset-0 bg-gradient-to-b from-white/20 to-transparent"></div>
                                                     <div className="absolute bottom-0 left-0 right-0 h-1/3 bg-black/10"></div>
                                                 </div>
 
                                                 {/* Energy Bar 2 - Full */}
-                                                <div className="relative h-14 rounded-xl overflow-hidden" style={{ animationDelay: '150ms' }}>
+                                                <div className="relative h-14 rounded-lg overflow-hidden" style={{ animationDelay: '150ms' }}>
                                                     <div className="absolute inset-0 bg-gradient-to-r from-[#1E8E3E] via-[#22C55E] to-[#1E8E3E] animate-pulse"></div>
                                                     <div className="absolute inset-0 bg-gradient-to-b from-white/20 to-transparent"></div>
                                                     <div className="absolute bottom-0 left-0 right-0 h-1/3 bg-black/10"></div>
                                                 </div>
 
                                                 {/* Energy Bar 3 - Lighter */}
-                                                <div className="relative h-14 rounded-xl overflow-hidden" style={{ animationDelay: '300ms' }}>
+                                                <div className="relative h-14 rounded-lg overflow-hidden" style={{ animationDelay: '300ms' }}>
                                                     <div className="absolute inset-0 bg-gradient-to-r from-[#34D399] via-[#4ADE80] to-[#34D399] animate-pulse"></div>
                                                     <div className="absolute inset-0 bg-gradient-to-b from-white/25 to-transparent"></div>
                                                     <div className="absolute bottom-0 left-0 right-0 h-1/3 bg-black/10"></div>
                                                 </div>
 
                                                 {/* Energy Bar 4 - Empty/Low */}
-                                                <div className="relative h-14 rounded-xl overflow-hidden bg-[#1E3A5F]/50">
+                                                <div className="relative h-14 rounded-lg overflow-hidden bg-[#1E3A5F]/50">
                                                     <div className="absolute inset-0 bg-gradient-to-b from-white/5 to-transparent"></div>
                                                 </div>
                                             </div>

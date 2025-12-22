@@ -55,9 +55,9 @@ export default function ContactPage() {
                         {contactMethods.map((method) => (
                             <div
                                 key={method.title}
-                                className="bg-gray-50 rounded-2xl p-5 hover:shadow-lg transition-shadow"
+                                className="bg-gray-50 rounded-lg p-5 hover:shadow-lg transition-shadow"
                             >
-                                <div className="w-16 h-16 bg-energy-green/10 rounded-2xl flex items-center justify-center mb-6 text-energy-green">
+                                <div className="w-16 h-16 bg-energy-green/10 rounded-lg flex items-center justify-center mb-6 text-energy-green">
                                     {method.icon}
                                 </div>
                                 <h3 className="text-2xl font-bold text-energy-blue mb-2">{method.title}</h3>
@@ -198,7 +198,7 @@ export default function ContactPage() {
                         </div>
 
                         <div className="space-y-8">
-                            <div className="rounded-2xl overflow-hidden shadow-xl">
+                            <div className="rounded-lg overflow-hidden shadow-xl">
                                 <Image
                                     src="/card1.jpg"
                                     alt="Future Energy Office"
@@ -208,7 +208,7 @@ export default function ContactPage() {
                                 />
                             </div>
 
-                            <div className="bg-energy-blue rounded-2xl p-8 text-white">
+                            <div className="bg-energy-blue rounded-lg p-8 text-white">
                                 <h3 className="text-xl font-bold mb-6">Direct Contact</h3>
                                 <div className="space-y-6">
                                     <div className="flex items-start gap-4">
@@ -238,7 +238,7 @@ export default function ContactPage() {
                                 </div>
                             </div>
 
-                            <div className="bg-energy-green/10 rounded-2xl p-8">
+                            <div className="bg-energy-green/10 rounded-lg p-8">
                                 <h3 className="text-xl font-bold text-energy-blue mb-4">Business Hours</h3>
                                 <div className="space-y-2 text-gray-600">
                                     <div className="flex justify-between">
@@ -269,7 +269,7 @@ export default function ContactPage() {
                         description="Plot No 18-19, Sector 2A, IMT Manesar, Gurugram, Haryana 122052, India"
                     />
 
-                    <div className="bg-gray-100 rounded-2xl overflow-hidden shadow-xl">
+                    <div className="bg-gray-100 rounded-lg overflow-hidden shadow-xl">
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3510.571287413438!2d76.93101228090082!3d28.371808213431137!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d3dcf3b437681%3A0x6191e66e87c7bbf3!2sFuture%20Energy%20Plot%20No%2018-19!5e0!3m2!1sen!2sin!4v1766388753254!5m2!1sen!2sin"
                             width="100%"
@@ -282,7 +282,7 @@ export default function ContactPage() {
                         ></iframe>
                     </div>
 
-                    <div className="mt-8 bg-energy-blue rounded-2xl p-8 text-white">
+                    <div className="mt-8 bg-energy-blue rounded-lg p-8 text-white">
                         <div className="grid md:grid-cols-3 gap-8">
                             <div className="flex items-start gap-4">
                                 <div className="w-12 h-12 bg-white/10 rounded-lg flex items-center justify-center flex-shrink-0">
@@ -356,7 +356,7 @@ export default function ContactPage() {
                                 answer: 'Fill out the contact form with your business details and interest in partnership. Our team will evaluate and respond within 48 hours.',
                             },
                         ].map((faq, index) => (
-                            <div key={index} className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
+                            <div key={index} className="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
                                 <h4 className="font-bold text-energy-blue mb-2">{faq.question}</h4>
                                 <p className="text-gray-600">{faq.answer}</p>
                             </div>

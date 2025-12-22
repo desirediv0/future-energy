@@ -106,7 +106,7 @@ export default function LeadershipPage() {
                                     }`}
                             >
                                 <div className={`relative ${index % 2 === 1 ? 'lg:order-2' : ''}`}>
-                                    <div className="relative rounded-2xl overflow-hidden shadow-2xl aspect-[4/5]">
+                                    <div className="relative rounded-lg overflow-hidden shadow-2xl aspect-[4/5]">
                                         <Image
                                             src={leader.image}
                                             alt={leader.name}
@@ -121,7 +121,7 @@ export default function LeadershipPage() {
                                         </div>
                                     </div>
 
-                                    <div className={`absolute -bottom-6 ${index % 2 === 0 ? '-right-6' : '-left-6'} bg-energy-orange text-white p-4 rounded-xl shadow-xl hidden md:block`}>
+                                    <div className={`absolute -bottom-6 ${index % 2 === 0 ? '-right-6' : '-left-6'} bg-energy-orange text-white p-4 rounded-lg shadow-xl hidden md:block`}>
                                         <div className="text-2xl font-bold">{leader.experience.split(' ')[0]}</div>
                                         <div className="text-white/80 text-sm">Years Experience</div>
                                     </div>
@@ -184,9 +184,9 @@ export default function LeadershipPage() {
                         {leadershipValues.map((value, index) => (
                             <div
                                 key={value.title}
-                                className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group text-center"
+                                className="bg-white rounded-lg p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 group text-center"
                             >
-                                <div className="w-16 h-16 bg-energy-green/10 rounded-2xl flex items-center justify-center mx-auto mb-6 text-energy-green group-hover:bg-energy-green group-hover:text-white transition-colors">
+                                <div className="w-16 h-16 bg-energy-green/10 rounded-lg flex items-center justify-center mx-auto mb-6 text-energy-green group-hover:bg-energy-green group-hover:text-white transition-colors">
                                     {value.icon}
                                 </div>
                                 <h3 className="text-xl font-bold text-energy-blue mb-3">{value.title}</h3>
@@ -206,7 +206,7 @@ export default function LeadershipPage() {
 
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
                         {experienceStats.map((stat) => (
-                            <div key={stat.label} className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 text-center hover:bg-white/20 transition-colors">
+                            <div key={stat.label} className="bg-white/10 backdrop-blur-sm rounded-lg p-8 text-center hover:bg-white/20 transition-colors">
                                 <div className="text-4xl md:text-5xl font-bold text-energy-orange mb-2">{stat.value}</div>
                                 <div className="text-white/80 text-sm">{stat.label}</div>
                             </div>
@@ -227,7 +227,7 @@ export default function LeadershipPage() {
                         {['/card1.jpg', '/card2.jpg', '/card3.jpg', '/card4.jpg'].map((img, index) => (
                             <div
                                 key={index}
-                                className="relative rounded-xl overflow-hidden shadow-lg group aspect-square"
+                                className="relative rounded-lg overflow-hidden shadow-lg group aspect-square"
                             >
                                 <Image
                                     src={img}

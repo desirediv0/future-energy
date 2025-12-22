@@ -182,7 +182,7 @@ export default function ProductDetailsPage() {
                         {batteryProducts.map((product, index) => (
                             <div
                                 key={product.model}
-                                className={`bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow border ${product.featured ? 'border-energy-green ring-2 ring-energy-green/20' : 'border-gray-100'
+                                className={`bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow border ${product.featured ? 'border-energy-green ring-2 ring-energy-green/20' : 'border-gray-100'
                                     }`}
                             >
                                 <div className={`p-6 ${product.featured ? 'bg-energy-green' : 'bg-energy-blue'} text-white relative`}>
@@ -192,7 +192,7 @@ export default function ProductDetailsPage() {
                                         </span>
                                     )}
                                     <div className="flex items-center gap-4">
-                                        <div className="w-16 h-16 bg-white/20 rounded-xl flex items-center justify-center">
+                                        <div className="w-16 h-16 bg-white/20 rounded-lg flex items-center justify-center">
                                             <svg className="w-10 h-10 text-white" fill="currentColor" viewBox="0 0 24 24">
                                                 <path d="M17 4h-3V2h-4v2H7a2 2 0 00-2 2v16a2 2 0 002 2h10a2 2 0 002-2V6a2 2 0 00-2-2z" />
                                             </svg>
@@ -288,7 +288,7 @@ export default function ProductDetailsPage() {
                         {['40Ah', '100Ah', '150Ah', '200Ah', '250Ah', '300Ah', '350Ah', '400Ah', '450Ah', '500Ah'].map((capacity, index) => (
                             <div
                                 key={capacity}
-                                className="bg-white/10 backdrop-blur-sm rounded-xl p-6 text-center hover:bg-white/20 transition-colors group"
+                                className="bg-white/10 backdrop-blur-sm rounded-lg p-6 text-center hover:bg-white/20 transition-colors group"
                             >
                                 <div className="text-xl font-bold text-energy-orange mb-2">12V</div>
                                 <div className="text-2xl font-bold">{capacity}</div>

@@ -9,7 +9,7 @@ export default function TeamCard({
     expertise,
 }) {
     return (
-        <div className="group relative bg-white rounded-2xl overflow-hidden shadow-lg card-hover border border-gray-100">
+        <div className="group relative bg-white rounded-lg overflow-hidden shadow-lg card-hover border border-gray-100">
             {/* Header Background */}
             <div className="h-32 bg-energy-gradient relative">
                 {/* Pattern Overlay */}

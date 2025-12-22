@@ -146,7 +146,7 @@ export default function GalleryPage() {
                             <div
                                 key={item.id}
                                 onClick={() => openLightbox(item)}
-                                className={`group relative overflow-hidden rounded-2xl cursor-pointer shadow-lg hover:shadow-xl transition-all duration-300 ${index === 0 || index === 5 ? 'md:col-span-2 md:row-span-2' : ''
+                                className={`group relative overflow-hidden rounded-lg cursor-pointer shadow-lg hover:shadow-xl transition-all duration-300 ${index === 0 || index === 5 ? 'md:col-span-2 md:row-span-2' : ''
                                     }`}
                             >
                                 <div className={`relative ${index === 0 || index === 5 ? 'h-80 md:h-full min-h-[400px]' : 'h-56 md:h-64'
@@ -292,7 +292,7 @@ export default function GalleryPage() {
                             { value: '10,000+', label: 'Monthly Production' },
                             { value: '30+', label: 'Countries Served' },
                         ].map((stat) => (
-                            <div key={stat.label} className="p-6 rounded-2xl bg-gray-50 hover:bg-energy-green/5 transition-colors">
+                            <div key={stat.label} className="p-6 rounded-lg bg-gray-50 hover:bg-energy-green/5 transition-colors">
                                 <div className="text-3xl md:text-4xl font-bold text-energy-green mb-2">{stat.value}</div>
                                 <div className="text-gray-600">{stat.label}</div>
                             </div>

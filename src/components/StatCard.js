@@ -43,7 +43,7 @@ export default function StatCard({
 
     return (
         <div
-            className={`relative p-6 rounded-2xl bg-white border ${colors.border} shadow-sm hover:shadow-lg transition-all duration-300 group`}
+            className={`relative p-6 rounded-lg bg-white border ${colors.border} shadow-sm hover:shadow-lg transition-all duration-300 group`}
         >
             {/* Background Accent */}
             <div
@@ -52,7 +52,7 @@ export default function StatCard({
 
             {/* Icon */}
             <div
-                className={`relative w-14 h-14 ${colors.bg} rounded-xl flex items-center justify-center ${colors.icon} mb-4`}
+                className={`relative w-14 h-14 ${colors.bg} rounded-lg flex items-center justify-center ${colors.icon} mb-4`}
             >
                 {icons[icon] || icons.battery}
             </div>
