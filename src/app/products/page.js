@@ -4,21 +4,15 @@ import Hero from '@/components/Hero';
 import CTA from '@/components/CTA';
 import SectionHeader from '@/components/SectionHeader';
 
-/**
- * Products Page Metadata
- */
 export const metadata = {
     title: 'Products',
     description:
         'Explore Future Energy\'s comprehensive range of battery and energy solutions - Automotive Batteries, Inverter Batteries, Stabilizers, Solar Solutions, and Lead Acid Batteries from 12V40Ah to 12V500Ah.',
 };
 
-/**
- * Products Page
- * Showcase all product categories
- */
+
 export default function ProductsPage() {
-    // Product categories with detailed information
+
     const products = [
         {
             id: 'automotive',
@@ -279,7 +273,7 @@ export default function ProductsPage() {
 
                                 <h2 className="text-3xl md:text-4xl font-bold mb-4">IT 700 Patent Product</h2>
                                 <p className="text-white/80 mb-6">
-                                    Our patented technology delivers superior performance with extended cycle life, 
+                                    Our patented technology delivers superior performance with extended cycle life,
                                     fast charging, and exceptional reliability for demanding applications.
                                 </p>
 

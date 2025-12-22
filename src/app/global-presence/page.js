@@ -3,20 +3,15 @@ import Hero from '@/components/Hero';
 import CTA from '@/components/CTA';
 import SectionHeader from '@/components/SectionHeader';
 import Link from 'next/link';
+import { HiGlobeAlt, HiUserGroup, HiCube, HiClock, HiBadgeCheck, HiSwitchHorizontal, HiUsers, HiCheckCircle, HiArrowRight, HiCurrencyRupee } from 'react-icons/hi';
 
-/**
- * Global Presence Page Metadata
- */
 export const metadata = {
     title: 'Global Presence',
     description:
         'Future Energy serves customers across 30+ countries worldwide. Discover our international reach and distribution network.',
 };
 
-/**
- * Global Presence Page
- * International reach and distribution network
- */
+
 export default function GlobalPresencePage() {
     // Regions and countries
     const regions = [
@@ -42,10 +37,10 @@ export default function GlobalPresencePage() {
 
     // Global stats
     const globalStats = [
-        { value: '30+', label: 'Countries', icon: '🌍' },
-        { value: '50+', label: 'Distributors', icon: '🤝' },
-        { value: '100K+', label: 'Units Exported', icon: '📦' },
-        { value: '15+', label: 'Years Exporting', icon: '⏱️' },
+        { value: '30+', label: 'Countries', icon: <HiGlobeAlt className="w-10 h-10" /> },
+        { value: '50+', label: 'Distributors', icon: <HiUserGroup className="w-10 h-10" /> },
+        { value: '100K+', label: 'Units Exported', icon: <HiCube className="w-10 h-10" /> },
+        { value: '15+', label: 'Years Exporting', icon: <HiClock className="w-10 h-10" /> },
     ];
 
     // Export highlights
@@ -53,38 +48,22 @@ export default function GlobalPresencePage() {
         {
             title: 'Quality Certified',
             description: 'All our export products meet international quality standards and certifications.',
-            icon: (
-                <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
-                </svg>
-            ),
+            icon: <HiBadgeCheck className="w-8 h-8" />,
         },
         {
             title: 'Competitive Pricing',
             description: 'We offer competitive pricing without compromising on quality or service.',
-            icon: (
-                <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-            ),
+            icon: <HiCurrencyRupee className="w-8 h-8" />,
         },
         {
             title: 'Reliable Supply',
             description: 'Consistent supply chain with on-time delivery to global destinations.',
-            icon: (
-                <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
-                </svg>
-            ),
+            icon: <HiSwitchHorizontal className="w-8 h-8" />,
         },
         {
             title: 'Partner Support',
             description: 'Comprehensive support for distributors including marketing and technical assistance.',
-            icon: (
-                <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-                </svg>
-            ),
+            icon: <HiUsers className="w-8 h-8" />,
         },
     ];
 
@@ -105,9 +84,9 @@ export default function GlobalPresencePage() {
             <section className="py-12 bg-energy-green text-white">
                 <div className="container-custom">
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-                        {globalStats.map((stat, index) => (
+                        {globalStats.map((stat) => (
                             <div key={stat.label}>
-                                <div className="text-4xl mb-2">{stat.icon}</div>
+                                <div className="flex justify-center mb-2">{stat.icon}</div>
                                 <div className="text-3xl md:text-4xl font-bold">{stat.value}</div>
                                 <div className="text-white/80">{stat.label}</div>
                             </div>
@@ -137,9 +116,7 @@ export default function GlobalPresencePage() {
                         <div className="absolute inset-0 flex items-center justify-center">
                             <div className="text-center">
                                 <div className="w-24 h-24 bg-energy-green rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
-                                    <svg className="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                    </svg>
+                                    <HiGlobeAlt className="w-12 h-12 text-white" />
                                 </div>
                                 <h3 className="text-3xl font-bold text-energy-blue mb-2">30+ Countries</h3>
                                 <p className="text-gray-600">Delivering energy solutions worldwide</p>
@@ -165,7 +142,7 @@ export default function GlobalPresencePage() {
                     />
 
                     <div className="grid md:grid-cols-3 gap-8">
-                        {regions.map((region, index) => (
+                        {regions.map((region) => (
                             <div
                                 key={region.name}
                                 className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow"
@@ -176,9 +153,7 @@ export default function GlobalPresencePage() {
                                         ? 'bg-energy-green/10 text-energy-green'
                                         : 'bg-energy-blue/10 text-energy-blue'
                                     }`}>
-                                    <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                    </svg>
+                                    <HiGlobeAlt className="w-8 h-8" />
                                 </div>
 
                                 <h3 className="text-2xl font-bold text-energy-blue mb-2">{region.name}</h3>
@@ -220,7 +195,7 @@ export default function GlobalPresencePage() {
                     </div>
 
                     <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
-                        {exportHighlights.map((highlight, index) => (
+                        {exportHighlights.map((highlight) => (
                             <div
                                 key={highlight.title}
                                 className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 text-center hover:bg-white/20 transition-colors"
@@ -288,9 +263,7 @@ export default function GlobalPresencePage() {
                                     'Dedicated account management',
                                 ].map((benefit, idx) => (
                                     <li key={idx} className="flex items-center gap-3 text-gray-700">
-                                        <svg className="w-5 h-5 text-energy-green flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
-                                            <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z" />
-                                        </svg>
+                                        <HiCheckCircle className="w-5 h-5 text-energy-green flex-shrink-0" />
                                         {benefit}
                                     </li>
                                 ))}
@@ -298,9 +271,7 @@ export default function GlobalPresencePage() {
 
                             <Link href="/contact" className="btn-primary inline-flex items-center gap-2">
                                 Apply for Partnership
-                                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                                </svg>
+                                <HiArrowRight className="w-5 h-5" />
                             </Link>
                         </div>
                     </div>
