@@ -17,7 +17,7 @@ export default function LeadershipPage() {
             experience: '30+ Years Experience',
             bio: 'A visionary leader with over three decades of expertise in battery production and research & development. Mr. Jena has been instrumental in establishing Future Energy\'s manufacturing excellence and driving innovation through the patented IT 700 technology.',
             expertise: ['Battery Manufacturing', 'R&D Leadership', 'Quality Management', 'Process Optimization'],
-            email: 'ananta@fut-energy.com',
+            email: 'ananta@futurenergy.co.in',
             image: '/profile2.png',
         },
         {

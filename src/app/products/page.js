@@ -303,7 +303,7 @@ export default function ProductsPage() {
                                     fill
                                     className="object-cover"
                                 />
-                                <div className="absolute inset-0 bg-gradient-to-r from-energy-green to-transparent"></div>
+                                <div className="absolute inset-0 bg-gradient-to-r from-energy-green/40 to-transparent"></div>
                             </div>
                         </div>
                     </div>

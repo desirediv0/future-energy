@@ -7,7 +7,7 @@ import { HiMail, HiLocationMarker, HiGlobeAlt } from 'react-icons/hi';
 export const metadata = {
     title: 'Contact Us',
     description:
-        'Get in touch with Future Energy. Email us at ananta@fut-energy.com or vikas@fut-energy.com. Visit our manufacturing unit at IMT Manesar, Gurugram.',
+        'Get in touch with Future Energy. Email us at ananta@futurenergy.co.in or vikas@fut-energy.com. Visit our manufacturing unit at IMT Manesar, Gurugram.',
 };
 
 export default function ContactPage() {
@@ -16,7 +16,7 @@ export default function ContactPage() {
             title: 'Email Us',
             description: 'Get in touch with our team directly',
             contacts: [
-                { label: 'Mr. Ananta Jena', value: 'ananta@fut-energy.com', href: 'mailto:ananta@fut-energy.com' },
+                { label: 'Mr. Ananta Jena', value: 'ananta@futurenergy.co.in', href: 'mailto:ananta@futurenergy.co.in' },
                 { label: 'Mr. Vikas Chaudhary', value: 'vikas@fut-energy.com', href: 'mailto:vikas@fut-energy.com' },
             ],
             icon: <HiMail className="w-8 h-8" />,
@@ -38,7 +38,7 @@ export default function ContactPage() {
                 subtitle="Contact Us"
                 description="Have questions about our products or want to discuss partnership opportunities? We&apos;re here to help."
                 primaryCTA="Send Email"
-                primaryHref="mailto:ananta@fut-energy.com"
+                primaryHref="mailto:ananta@futurenergy.co.in"
                 secondaryCTA="View Location"
                 secondaryHref="#location"
             />
@@ -217,8 +217,8 @@ export default function ContactPage() {
                                         </div>
                                         <div>
                                             <div className="font-semibold mb-1">Mr. Ananta Jena</div>
-                                            <a href="mailto:ananta@fut-energy.com" className="text-energy-orange hover:text-energy-orange-light transition-colors">
-                                                ananta@fut-energy.com
+                                            <a href="mailto:ananta@futurenergy.co.in" className="text-energy-orange hover:text-energy-orange-light transition-colors">
+                                                ananta@futurenergy.co.in
                                             </a>
                                             <p className="text-white/60 text-sm mt-1">Director - Production & R&D</p>
                                         </div>
@@ -303,8 +303,8 @@ export default function ContactPage() {
                                 </div>
                                 <div>
                                     <div className="font-semibold mb-1">Email Us</div>
-                                    <a href="mailto:ananta@fut-energy.com" className="text-energy-orange hover:text-energy-orange-light transition-colors text-sm block">
-                                        ananta@fut-energy.com
+                                    <a href="mailto:ananta@futurenergy.co.in" className="text-energy-orange hover:text-energy-orange-light transition-colors text-sm block">
+                                        ananta@futurenergy.co.in
                                     </a>
                                     <a href="mailto:vikas@fut-energy.com" className="text-energy-orange hover:text-energy-orange-light transition-colors text-sm block">
                                         vikas@fut-energy.com

@@ -248,7 +248,7 @@ Haryana 122052, India
 
 **Email:**
 info@fut-energy.com
-ananta@fut-energy.com
+ananta@futurenergy.co.in
 vikas@fut-energy.com
 
 **For Legal Inquiries:**

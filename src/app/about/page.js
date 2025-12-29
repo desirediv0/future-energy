@@ -53,32 +53,32 @@ export default function AboutPage() {
     // Company milestones
     const milestones = [
         {
-            year: '2008',
+            year: '2021',
             title: 'Foundation',
             description: 'Future Energy was established with a vision to revolutionize the energy solutions market in India.',
         },
         {
-            year: '2012',
+            year: '2023',
             title: 'Manufacturing Unit',
             description: 'State-of-the-art facility established at IMT Manesar, Gurugram with advanced production capabilities.',
         },
         {
-            year: '2015',
+            year: '2023',
             title: 'IT 700 Patent',
             description: 'Secured patent for our innovative IT 700 technology, setting new benchmarks in battery performance.',
         },
         {
-            year: '2018',
+            year: '2023',
             title: 'Global Expansion',
             description: 'Expanded presence to 20+ countries, establishing Future Energy as a trusted international brand.',
         },
         {
-            year: '2021',
+            year: '2024',
             title: 'Solar Solutions',
             description: 'Launched residential solar solutions, contributing to sustainable and clean energy adoption.',
         },
         {
-            year: '2024',
+            year: '2025',
             title: '30+ Countries',
             description: 'Now serving customers across 30+ countries with our comprehensive energy solutions portfolio.',
         },
@@ -155,7 +155,7 @@ export default function AboutPage() {
                             {/* Quick Stats */}
                             <div className="grid grid-cols-3 gap-6 mt-8 pt-8 border-t border-gray-200">
                                 <div>
-                                    <div className="text-2xl font-bold text-energy-green">2008</div>
+                                    <div className="text-2xl font-bold text-energy-green">2021</div>
                                     <div className="text-gray-500 text-sm">Founded</div>
                                 </div>
                                 <div>
@@ -177,7 +177,7 @@ export default function AboutPage() {
                 <div className="container-custom">
                     <div className="grid md:grid-cols-2 gap-8">
                         {/* Mission */}
-                        <div className="bg-white rounded-3xl p-10 shadow-lg hover:shadow-xl transition-shadow border-l-4 border-energy-green">
+                        <div className="bg-white rounded-xl p-10 shadow-lg hover:shadow-xl transition-shadow border-l-4 border-energy-green">
                             <div className="w-16 h-16 bg-energy-green/10 rounded-lg flex items-center justify-center mb-6">
                                 <svg className="w-8 h-8 text-energy-green" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
@@ -193,7 +193,7 @@ export default function AboutPage() {
                         </div>
 
                         {/* Vision */}
-                        <div className="bg-white rounded-3xl p-10 shadow-lg hover:shadow-xl transition-shadow border-l-4 border-energy-orange">
+                        <div className="bg-white rounded-xl p-10 shadow-lg hover:shadow-xl transition-shadow border-l-4 border-energy-orange">
                             <div className="w-16 h-16 bg-energy-orange/10 rounded-lg flex items-center justify-center mb-6">
                                 <svg className="w-8 h-8 text-energy-orange" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
