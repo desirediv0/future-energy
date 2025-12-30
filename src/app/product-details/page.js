@@ -259,15 +259,15 @@ export default function ProductDetailsPage() {
                             <span className="text-energy-orange font-semibold text-sm">Complete Battery Range</span>
                         </span>
                         <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                            Lead Acid Batteries: 12V40Ah to 12V500Ah
+                            Lead Acid Batteries: 12V300Ah to 12V500Ah
                         </h2>
                         <p className="text-white/80 max-w-2xl mx-auto">
                             Our lead acid battery lineup covers every capacity requirement, from small backup systems to large industrial applications.
                         </p>
                     </div>
 
-                    <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
-                        {['40Ah', '100Ah', '150Ah', '200Ah', '250Ah', '300Ah', '350Ah', '400Ah', '450Ah', '500Ah'].map((capacity, index) => (
+                    <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4">
+                        {['300Ah', '350Ah', '400Ah', '450Ah', '500Ah'].map((capacity) => (
                             <div
                                 key={capacity}
                                 className="bg-white/10 backdrop-blur-sm rounded-lg p-6 text-center hover:bg-white/20 transition-colors group"

@@ -228,7 +228,7 @@ export default function ProductsPage() {
                             <span className="text-energy-orange font-semibold text-sm">Battery Range</span>
                         </span>
                         <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-                            Lead Acid Batteries: 12V40Ah to 12V500Ah
+                            Lead Acid Batteries: 12V300Ah to 12V500Ah
                         </h2>
                         <p className="text-white/80 max-w-2xl mx-auto">
                             Complete range of lead acid batteries for every capacity requirement.
@@ -236,7 +236,7 @@ export default function ProductsPage() {
                     </div>
 
                     <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
-                        {['40Ah', '100Ah', '200Ah', '350Ah', '500Ah'].map((capacity, index) => (
+                        {['300Ah', '350Ah', '400Ah', '450Ah', '500Ah'].map((capacity, index) => (
                             <div
                                 key={capacity}
                                 className="bg-white/10 backdrop-blur-sm rounded-lg p-6 text-center hover:bg-white/20 transition-colors"
@@ -278,7 +278,7 @@ export default function ProductsPage() {
                                 </p>
 
                                 <ul className="space-y-3 mb-8">
-                                    {['12V300Ah', '12V350Ah', '12V400Ah', '12V450Ah', '12V500Ah'].map((model) => (
+                                    {['300 TT', '350 TT', '400 TT', '450 TT', '500 TT'].map((model) => (
                                         <li key={model} className="flex items-center gap-3">
                                             <svg className="w-5 h-5 text-energy-orange" fill="currentColor" viewBox="0 0 24 24">
                                                 <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z" />

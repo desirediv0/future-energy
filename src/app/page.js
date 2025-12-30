@@ -249,12 +249,12 @@ export default function HomePage() {
         <div className="container-custom">
           <SectionHeader
             subtitle="Product Range"
-            title="Lead Acid Batteries: 12V40Ah to 12V500Ah"
+            title="Lead Acid Batteries: 12V300Ah to 12V500Ah"
             description="Our comprehensive lead acid battery lineup covers every capacity requirement, from small backup systems to large industrial applications."
           />
 
           <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
-            {['40Ah', '100Ah', '200Ah', '350Ah', '500Ah'].map((capacity) => (
+            {['300Ah', '350Ah', '400Ah', '450Ah', '500Ah'].map((capacity) => (
               <div
                 key={capacity}
                 className="bg-gray-50 rounded-lg p-6 text-center hover:bg-energy-green/10 transition-colors group"
