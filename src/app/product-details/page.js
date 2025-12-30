@@ -12,60 +12,60 @@ export const metadata = {
 export default function ProductDetailsPage() {
     const batteryProducts = [
         {
-            model: '12V300Ah',
-            capacity: '300Ah',
+            id: 1,
+            model: '300 TT',
+            capacity: '300',
+            containerType: 'IT700',
+            dimensions: { l: 511, w: 190, h: 457 },
+            weight: '79',
             voltage: '12V',
-            dimensions: '520 x 268 x 220 mm',
-            weight: '95 kg',
-            type: 'VRLA AGM',
-            designLife: '10 years',
-            applications: ['UPS Systems', 'Telecom', 'Solar Storage'],
-            features: ['Deep cycle design', 'Low self-discharge', 'Maintenance-free'],
+            type: 'Tubular',
+            applications: ['Inverter', 'Solar', 'Power Backup'],
         },
         {
-            model: '12V350Ah',
-            capacity: '350Ah',
+            id: 2,
+            model: '350 TT',
+            capacity: '350',
+            containerType: 'IT700',
+            dimensions: { l: 511, w: 190, h: 457 },
+            weight: '82',
             voltage: '12V',
-            dimensions: '520 x 268 x 240 mm',
-            weight: '110 kg',
-            type: 'VRLA AGM',
-            designLife: '10 years',
-            applications: ['Industrial UPS', 'Data Centers', 'Emergency Power'],
-            features: ['High energy density', 'Excellent recovery', 'Wide temp range'],
+            type: 'Tubular',
+            applications: ['Inverter', 'Solar', 'Power Backup'],
         },
         {
-            model: '12V400Ah',
-            capacity: '400Ah',
+            id: 3,
+            model: '400 TT',
+            capacity: '420',
+            containerType: 'IT700',
+            dimensions: { l: 511, w: 190, h: 457 },
+            weight: '90',
             voltage: '12V',
-            dimensions: '520 x 268 x 260 mm',
-            weight: '125 kg',
-            type: 'VRLA AGM',
-            designLife: '12 years',
-            applications: ['Large UPS', 'Industrial Backup', 'Renewable Energy'],
-            features: ['Superior cycle life', 'Fast recharge', 'Robust construction'],
+            type: 'Tubular',
+            applications: ['Inverter', 'Solar', 'Power Backup'],
             featured: true,
         },
         {
-            model: '12V450Ah',
-            capacity: '450Ah',
+            id: 4,
+            model: '450 TT',
+            capacity: '450',
+            containerType: 'IT700',
+            dimensions: { l: 511, w: 190, h: 457 },
+            weight: '93',
             voltage: '12V',
-            dimensions: '520 x 268 x 280 mm',
-            weight: '140 kg',
-            type: 'VRLA Gel',
-            designLife: '12 years',
-            applications: ['Heavy Industry', 'Grid Storage', 'Mining'],
-            features: ['Gel technology', 'Extreme conditions', 'Long float life'],
+            type: 'Tubular',
+            applications: ['Heavy Duty', 'Solar', 'Industrial'],
         },
         {
-            model: '12V500Ah',
-            capacity: '500Ah',
+            id: 5,
+            model: '500 TT',
+            capacity: '500',
+            containerType: 'IT700',
+            dimensions: { l: 511, w: 190, h: 457 },
+            weight: '101',
             voltage: '12V',
-            dimensions: '520 x 268 x 300 mm',
-            weight: '155 kg',
-            type: 'VRLA Gel',
-            designLife: '12 years',
-            applications: ['Power Plants', 'Large Scale Storage', 'Critical Infrastructure'],
-            features: ['Maximum capacity', 'Premium quality', 'Extended warranty'],
+            type: 'Tubular',
+            applications: ['Heavy Duty', 'Solar', 'Industrial'],
         },
     ];
 
@@ -83,7 +83,7 @@ export default function ProductDetailsPage() {
             <Hero
                 title="IT 700 Patent Product Details"
                 subtitle="Product Specifications"
-                description="Explore comprehensive specifications of our battery range. Each product is engineered for performance, reliability, and longevity."
+                description="Explore comprehensive specifications of our IT 700 Patent Product range. Engineered for performance, reliability, and long life."
                 primaryCTA="Request Quote"
                 primaryHref="/contact"
                 secondaryCTA="View All Products"
@@ -174,8 +174,8 @@ export default function ProductDetailsPage() {
                 <div className="container-custom">
                     <SectionHeader
                         subtitle="Battery Range"
-                        title="Lead Acid Batteries: 12V40Ah to 12V500Ah"
-                        description="Our comprehensive range of high-capacity batteries designed for demanding applications across various industries."
+                        title="IT 700 Patent Product Series"
+                        description="Our comprehensive range of high-capacity batteries designed for demanding applications."
                     />
 
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -188,7 +188,7 @@ export default function ProductDetailsPage() {
                                 <div className={`p-6 ${product.featured ? 'bg-energy-green' : 'bg-energy-blue'} text-white relative`}>
                                     {product.featured && (
                                         <span className="absolute top-4 right-4 px-3 py-1 bg-energy-orange text-white text-xs font-bold rounded-full">
-                                            Best Seller
+                                            Popular
                                         </span>
                                     )}
                                     <div className="flex items-center gap-4">
@@ -207,7 +207,7 @@ export default function ProductDetailsPage() {
                                 <div className="p-6">
                                     <div className="space-y-3 mb-6">
                                         <div className="flex justify-between items-center py-2 border-b border-gray-100">
-                                            <span className="text-gray-600">Capacity</span>
+                                            <span className="text-gray-600">Capacity Rating</span>
                                             <span className="font-semibold text-energy-blue">{product.capacity}</span>
                                         </div>
                                         <div className="flex justify-between items-center py-2 border-b border-gray-100">
@@ -215,16 +215,12 @@ export default function ProductDetailsPage() {
                                             <span className="font-semibold text-energy-blue">{product.voltage}</span>
                                         </div>
                                         <div className="flex justify-between items-center py-2 border-b border-gray-100">
-                                            <span className="text-gray-600">Dimensions</span>
-                                            <span className="font-semibold text-energy-blue text-sm">{product.dimensions}</span>
+                                            <span className="text-gray-600">Container Type</span>
+                                            <span className="font-semibold text-energy-blue text-sm">{product.containerType}</span>
                                         </div>
                                         <div className="flex justify-between items-center py-2 border-b border-gray-100">
                                             <span className="text-gray-600">Weight</span>
-                                            <span className="font-semibold text-energy-blue">{product.weight}</span>
-                                        </div>
-                                        <div className="flex justify-between items-center py-2 border-b border-gray-100">
-                                            <span className="text-gray-600">Design Life</span>
-                                            <span className="font-semibold text-energy-green">{product.designLife}</span>
+                                            <span className="font-semibold text-energy-blue">{product.weight} Kg</span>
                                         </div>
                                     </div>
 
@@ -237,20 +233,6 @@ export default function ProductDetailsPage() {
                                                 </span>
                                             ))}
                                         </div>
-                                    </div>
-
-                                    <div className="mb-6">
-                                        <h4 className="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-3">Key Features</h4>
-                                        <ul className="space-y-2">
-                                            {product.features.map((feature, idx) => (
-                                                <li key={idx} className="flex items-center gap-2 text-sm text-gray-600">
-                                                    <svg className="w-4 h-4 text-energy-orange flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
-                                                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
-                                                    </svg>
-                                                    {feature}
-                                                </li>
-                                            ))}
-                                        </ul>
                                     </div>
 
                                     <Link
@@ -311,21 +293,35 @@ export default function ProductDetailsPage() {
                         <table className="w-full border-collapse">
                             <thead>
                                 <tr className="bg-energy-blue text-white">
-                                    <th className="px-6 py-4 text-left font-semibold">Model</th>
-                                    <th className="px-6 py-4 text-left font-semibold">Capacity</th>
-                                    <th className="px-6 py-4 text-left font-semibold">Type</th>
-                                    <th className="px-6 py-4 text-left font-semibold">Weight</th>
-                                    <th className="px-6 py-4 text-left font-semibold">Design Life</th>
-                                    <th className="px-6 py-4 text-left font-semibold">Action</th>
+                                    <th rowSpan="2" className="px-6 py-4 text-left font-semibold border-r border-energy-blue-light">Sl.no.</th>
+                                    <th rowSpan="2" className="px-6 py-4 text-left font-semibold border-r border-energy-blue-light">Model</th>
+                                    <th rowSpan="2" className="px-6 py-4 text-center font-semibold border-r border-energy-blue-light">
+                                        Capacity rating<br />
+                                        <span className="text-sm font-normal text-white/80">12V _AH @C20</span>
+                                    </th>
+                                    <th rowSpan="2" className="px-6 py-4 text-center font-semibold border-r border-energy-blue-light">Container type</th>
+                                    <th colSpan="3" className="px-6 py-2 text-center font-semibold border-b border-energy-blue-light border-r">Overall Dimensions ±3 MM</th>
+                                    <th rowSpan="2" className="px-6 py-4 text-center font-semibold">
+                                        Gross Wt-Kg<br />
+                                        <span className="text-sm font-normal text-white/80">± 3%</span>
+                                    </th>
+                                </tr>
+                                <tr className="bg-energy-blue text-white">
+                                    <th className="px-4 py-2 text-center font-medium border-r border-energy-blue-light">Length</th>
+                                    <th className="px-4 py-2 text-center font-medium border-r border-energy-blue-light">Width</th>
+                                    <th className="px-4 py-2 text-center font-medium border-r border-energy-blue-light">Height</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                {batteryProducts.map((product, index) => (
+                                {batteryProducts.map((product) => (
                                     <tr
                                         key={product.model}
                                         className={`border-b border-gray-100 hover:bg-gray-50 transition-colors ${product.featured ? 'bg-energy-green/5' : ''
                                             }`}
                                     >
+                                        <td className="px-6 py-4 text-center text-gray-600 font-medium">
+                                            {product.id}
+                                        </td>
                                         <td className="px-6 py-4">
                                             <div className="flex items-center gap-2">
                                                 <span className="font-semibold text-energy-blue">{product.model}</span>
@@ -334,19 +330,13 @@ export default function ProductDetailsPage() {
                                                 )}
                                             </div>
                                         </td>
-                                        <td className="px-6 py-4 text-gray-600">{product.capacity}</td>
-                                        <td className="px-6 py-4 text-gray-600">{product.type}</td>
-                                        <td className="px-6 py-4 text-gray-600">{product.weight}</td>
-                                        <td className="px-6 py-4">
-                                            <span className="text-energy-green font-medium">{product.designLife}</span>
-                                        </td>
-                                        <td className="px-6 py-4">
-                                            <Link
-                                                href="/contact"
-                                                className="text-energy-green hover:text-energy-green-dark font-medium"
-                                            >
-                                                Get Quote →
-                                            </Link>
+                                        <td className="px-6 py-4 text-center text-gray-600 font-bold">{product.capacity}</td>
+                                        <td className="px-6 py-4 text-center text-gray-600">{product.containerType}</td>
+                                        <td className="px-4 py-4 text-center text-gray-600">{product.dimensions.l}</td>
+                                        <td className="px-4 py-4 text-center text-gray-600">{product.dimensions.w}</td>
+                                        <td className="px-4 py-4 text-center text-gray-600">{product.dimensions.h}</td>
+                                        <td className="px-6 py-4 text-center font-bold text-energy-green">
+                                            {product.weight}
                                         </td>
                                     </tr>
                                 ))}

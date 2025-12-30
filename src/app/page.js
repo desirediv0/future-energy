@@ -209,7 +209,7 @@ export default function HomePage() {
 
               {/* Features */}
               <div className="grid grid-cols-2 gap-4 mb-8">
-                {['12V300Ah', '12V350Ah', '12V400Ah', '12V450Ah', '12V500Ah'].map((model) => (
+                {['300 TT', '350 TT', '400 TT', '450 TT', '500 TT'].map((model) => (
                   <div key={model} className="flex items-center gap-2 bg-white/10 rounded-lg px-4 py-2">
                     <HiCheckCircle className="w-5 h-5 text-energy-orange" />
                     <span className="font-semibold">{model}</span>
