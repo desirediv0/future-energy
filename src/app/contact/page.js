@@ -7,7 +7,7 @@ import { HiMail, HiLocationMarker, HiGlobeAlt } from 'react-icons/hi';
 export const metadata = {
     title: 'Contact Us',
     description:
-        'Get in touch with Future Energy. Email us at ananta@futurenergy.co.in or vikas@fut-energy.com. Visit our manufacturing unit at IMT Manesar, Gurugram.',
+        'Get in touch with Future Energy. Email us at ananta@futurenergy.co.in or vikas@futurenergy.co.in. Visit our manufacturing unit at IMT Manesar, Gurugram.',
 };
 
 export default function ContactPage() {
@@ -17,7 +17,7 @@ export default function ContactPage() {
             description: 'Get in touch with our team directly',
             contacts: [
                 { label: 'Mr. Ananta Jena', value: 'ananta@futurenergy.co.in', href: 'mailto:ananta@futurenergy.co.in' },
-                { label: 'Mr. Vikas Chaudhary', value: 'vikas@fut-energy.com', href: 'mailto:vikas@fut-energy.com' },
+                { label: 'Mr. Vikas Chaudhary', value: 'vikas@futurenergy.co.in', href: 'mailto:vikas@futurenergy.co.in' },
             ],
             icon: <HiMail className="w-8 h-8" />,
         },
@@ -229,8 +229,8 @@ export default function ContactPage() {
                                         </div>
                                         <div>
                                             <div className="font-semibold mb-1">Mr. Vikas Chaudhary</div>
-                                            <a href="mailto:vikas@fut-energy.com" className="text-energy-orange hover:text-energy-orange-light transition-colors">
-                                                vikas@fut-energy.com
+                                            <a href="mailto:vikas@futurenergy.co.in" className="text-energy-orange hover:text-energy-orange-light transition-colors">
+                                                vikas@futurenergy.co.in
                                             </a>
                                             <p className="text-white/60 text-sm mt-1">Director - Operations</p>
                                         </div>
@@ -306,8 +306,8 @@ export default function ContactPage() {
                                     <a href="mailto:ananta@futurenergy.co.in" className="text-energy-orange hover:text-energy-orange-light transition-colors text-sm block">
                                         ananta@futurenergy.co.in
                                     </a>
-                                    <a href="mailto:vikas@fut-energy.com" className="text-energy-orange hover:text-energy-orange-light transition-colors text-sm block">
-                                        vikas@fut-energy.com
+                                    <a href="mailto:vikas@futurenergy.co.in" className="text-energy-orange hover:text-energy-orange-light transition-colors text-sm block">
+                                        vikas@futurenergy.co.in
                                     </a>
                                 </div>
                             </div>

@@ -127,10 +127,10 @@ export default function Footer() {
                                         ananta@futurenergy.co.in
                                     </a>
                                     <a
-                                        href="mailto:vikas@fut-energy.com"
+                                        href="mailto:vikas@futurenergy.co.in"
                                         className="text-gray-300 hover:text-energy-green transition-colors text-sm"
                                     >
-                                        vikas@fut-energy.com
+                                        vikas@futurenergy.co.in
                                     </a>
                                 </div>
                             </li>

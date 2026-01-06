@@ -26,7 +26,7 @@ export default function LeadershipPage() {
             experience: '20+ Years Experience',
             bio: 'An accomplished professional with two decades of experience in battery manufacturing and operations. Mr. Chaudhary oversees the company\'s manufacturing operations, supply chain, and international business development.',
             expertise: ['Operations Management', 'Supply Chain', 'Business Development', 'International Trade'],
-            email: 'vikas@fut-energy.com',
+            email: 'vikas@futurenergy.co.in',
             image: '/profile1.png',
         },
     ];
