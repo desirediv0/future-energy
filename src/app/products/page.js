@@ -94,6 +94,22 @@ export default function ProductsPage() {
             ],
             applications: ['UPS Systems', 'Telecom Towers', 'Data Centers', 'Industrial Backup'],
         },
+        {
+            id: 'lithium',
+            title: 'Lithium Batteries',
+            tagline: 'Advanced Energy Storage',
+            description:
+                'State-of-the-art Lithium batteries available in 48V and 51.2V configurations. Choose from 100Ah, 150Ah, and 200Ah capacities for efficient, long-lasting energy storage.',
+            image: '/card5.jpg',
+            features: [
+                '48V & 51.2V Voltage Options',
+                '100Ah, 150Ah, 200Ah Capacities',
+                'Built-in BMS Protection',
+                'Fast Charging & Long Life',
+                'Maintenance Free',
+            ],
+            applications: ['Solar Storage', 'Electric Vehicles', 'Telecom Hubs', 'Smart Microgrids'],
+        },
     ];
 
     return (
