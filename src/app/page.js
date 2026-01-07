@@ -80,6 +80,7 @@ export default function HomePage() {
         secondaryCTA="Explore Products"
         secondaryHref="/products"
         isHomePage={true}
+        backgroundImage="/hero.jpg"
       />
 
       <section className="section-padding bg-white">

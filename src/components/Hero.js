@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { HiArrowRight, HiChevronDown, HiArrowDown } from 'react-icons/hi';
 import { BsLightningChargeFill } from 'react-icons/bs';
 
@@ -11,23 +12,44 @@ export default function Hero({
     secondaryCTA,
     secondaryHref,
     isHomePage = false,
+    backgroundImage,
 }) {
     return (
         <section
-            className={`relative overflow-hidden ${isHomePage ? 'min-h-screen py-10 md:py-16' : 'pt-32 pb-20'
-                } bg-gradient-to-br from-gray-50 via-white to-gray-100`}
+            className={`relative overflow-hidden ${isHomePage ? 'min-h-screen py-10 md:py-12' : 'pt-32 pb-20'
+                } ${backgroundImage ? 'bg-gray-900' : 'bg-gradient-to-br from-gray-50 via-white to-gray-100'}`}
         >
-            {/* Background Pattern */}
-            <div className="absolute inset-0 bg-hero-pattern"></div>
-            <div className="absolute inset-0 bg-grid-pattern"></div>
+            {/* Background Image */}
+            {backgroundImage && (
+                <>
+                    <div className="absolute inset-0 z-0">
+                        <Image
+                            src={backgroundImage}
+                            alt="Hero Background"
+                            fill
+                            priority
+                            className="object-cover"
+                        />
+                    </div>
+                    {/* Dark Overlay Gradient */}
+                    <div className="absolute inset-0 z-0 bg-gradient-to-r from-gray-900/90 via-gray-900/70 to-gray-900/30"></div>
+                </>
+            )}
 
-            {/* Decorative Elements */}
-            <div className="absolute top-20 right-0 w-96 h-96 bg-energy-green/5 rounded-full blur-3xl"></div>
-            <div className="absolute bottom-20 left-0 w-80 h-80 bg-energy-orange/5 rounded-full blur-3xl"></div>
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-energy-blue/3 rounded-full blur-3xl"></div>
+            {/* Background Pattern - Only show if no background image */}
+            {!backgroundImage && (
+                <>
+                    <div className="absolute inset-0 bg-hero-pattern"></div>
+                    <div className="absolute inset-0 bg-grid-pattern"></div>
+                    {/* Decorative Elements */}
+                    <div className="absolute top-20 right-0 w-96 h-96 bg-energy-green/5 rounded-full blur-3xl"></div>
+                    <div className="absolute bottom-20 left-0 w-80 h-80 bg-energy-orange/5 rounded-full blur-3xl"></div>
+                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-energy-blue/3 rounded-full blur-3xl"></div>
+                </>
+            )}
 
             {/* Animated Energy Lines */}
-            {isHomePage && (
+            {isHomePage && !backgroundImage && (
                 <>
                     <div className="absolute top-1/4 left-10 w-32 h-0.5 bg-gradient-to-r from-energy-green to-transparent animate-pulse"></div>
                     <div className="absolute top-1/3 right-20 w-24 h-0.5 bg-gradient-to-l from-energy-orange to-transparent animate-pulse delay-300"></div>
@@ -52,14 +74,15 @@ export default function Hero({
 
                     {/* Main Title */}
                     <h1
-                        className={`font-bold text-energy-blue leading-tight mb-6 animate-slide-up ${isHomePage
+                        className={`font-bold leading-tight mb-6 animate-slide-up ${isHomePage
                             ? 'text-4xl md:text-5xl lg:text-6xl xl:text-7xl'
                             : 'text-3xl md:text-4xl lg:text-5xl'
-                            }`}
+                            } ${backgroundImage ? 'text-white' : 'text-energy-blue'}`}
                     >
                         {title.split(' ').map((word, index) => (
                             <span
                                 key={index}
+
                                 className={
                                     word.toLowerCase() === 'energy' ||
                                         word.toLowerCase() === 'future' ||
@@ -76,7 +99,7 @@ export default function Hero({
 
                     {/* Description */}
                     {description && (
-                        <p className="text-lg md:text-xl text-gray-600 mb-8 max-w-2xl animate-slide-up delay-200">
+                        <p className={`text-lg md:text-xl mb-8 max-w-2xl animate-slide-up delay-200 ${backgroundImage ? 'text-gray-200' : 'text-gray-600'}`}>
                             {description}
                         </p>
                     )}
@@ -97,31 +120,31 @@ export default function Hero({
 
                     {/* Stats Row - Only on Home Page */}
                     {isHomePage && (
-                        <div className="grid grid-cols-3 gap-8 mt-16 pt-8 border-t border-gray-200 animate-fade-in delay-500">
+                        <div className={`grid grid-cols-3 gap-8 mt-16 pt-8 border-t animate-fade-in delay-500 ${backgroundImage ? 'border-white/20' : 'border-gray-200'}`}>
                             <div>
-                                <div className="text-3xl md:text-4xl font-bold text-energy-green">
+                                <div className={`text-3xl md:text-4xl font-bold ${backgroundImage ? 'text-energy-green' : 'text-energy-green'}`}>
                                     30+
                                 </div>
-                                <div className="text-gray-600 text-sm mt-1">Countries</div>
+                                <div className={`text-sm mt-1 ${backgroundImage ? 'text-gray-300' : 'text-gray-600'}`}>Countries</div>
                             </div>
                             <div>
-                                <div className="text-3xl md:text-4xl font-bold text-energy-orange">
+                                <div className={`text-3xl md:text-4xl font-bold ${backgroundImage ? 'text-white' : 'text-energy-orange'}`}>
                                     15+
                                 </div>
-                                <div className="text-gray-600 text-sm mt-1">Years Experience</div>
+                                <div className={`text-sm mt-1 ${backgroundImage ? 'text-gray-300' : 'text-gray-600'}`}>Years Experience</div>
                             </div>
                             <div>
-                                <div className="text-3xl md:text-4xl font-bold text-energy-blue">
+                                <div className={`text-3xl md:text-4xl font-bold ${backgroundImage ? 'text-white' : 'text-energy-blue'}`}>
                                     100K+
                                 </div>
-                                <div className="text-gray-600 text-sm mt-1">Units Delivered</div>
+                                <div className={`text-sm mt-1 ${backgroundImage ? 'text-gray-300' : 'text-gray-600'}`}>Units Delivered</div>
                             </div>
                         </div>
                     )}
                 </div>
 
                 {/* Hero Image/Illustration - Only on Home Page - IMPROVED BATTERY DESIGN */}
-                {isHomePage && (
+                {isHomePage && !backgroundImage && (
                     <div className="hidden lg:block absolute right-10 top-1/2 -translate-y-1/2 w-[420px]">
                         <div className="relative">
                             {/* Modern Battery Illustration */}
