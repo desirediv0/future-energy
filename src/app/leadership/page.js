@@ -17,7 +17,7 @@ export default function LeadershipPage() {
             experience: '30+ Years Experience',
             bio: 'A visionary leader with over three decades of expertise in battery production and research & development. Mr. Jena has been instrumental in establishing Future Energy\'s manufacturing excellence and driving innovation through the patented IT 700 technology.',
             expertise: ['Battery Manufacturing', 'R&D Leadership', 'Quality Management', 'Process Optimization'],
-            email: 'ananta@futurenergy.co.in',
+            email: 'Info@futurenergy.co.in',
             image: '/profile2.png',
         },
         {
@@ -26,7 +26,7 @@ export default function LeadershipPage() {
             experience: '20+ Years Experience',
             bio: 'An accomplished professional with two decades of experience in battery manufacturing and operations. Mr. Chaudhary oversees the company\'s manufacturing operations, supply chain, and international business development.',
             expertise: ['Operations Management', 'Supply Chain', 'Business Development', 'International Trade'],
-            email: 'vikas@futurenergy.co.in',
+            email: 'Info@futurenergy.co.in',
             image: '/profile1.png',
         },
     ];

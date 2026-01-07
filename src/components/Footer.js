@@ -121,16 +121,10 @@ export default function Footer() {
                                 <HiMail className="w-5 h-5 text-energy-orange flex-shrink-0" />
                                 <div className="flex flex-col">
                                     <a
-                                        href="mailto:ananta@futurenergy.co.in"
+                                        href="mailto:Info@futurenergy.co.in"
                                         className="text-gray-300 hover:text-energy-green transition-colors text-sm"
                                     >
-                                        ananta@futurenergy.co.in
-                                    </a>
-                                    <a
-                                        href="mailto:vikas@futurenergy.co.in"
-                                        className="text-gray-300 hover:text-energy-green transition-colors text-sm"
-                                    >
-                                        vikas@futurenergy.co.in
+                                        Info@futurenergy.co.in
                                     </a>
                                 </div>
                             </li>

@@ -5,9 +5,9 @@ import SectionHeader from '@/components/SectionHeader';
 import { HiMail, HiLocationMarker, HiGlobeAlt } from 'react-icons/hi';
 
 export const metadata = {
-    title: 'Contact Us',
+    title: 'Enquiry Form',
     description:
-        'Get in touch with Future Energy. Email us at ananta@futurenergy.co.in or vikas@futurenergy.co.in. Visit our manufacturing unit at IMT Manesar, Gurugram.',
+        'Get in touch with Future Energy. Email us at Info@futurenergy.co.in. Visit our manufacturing unit at IMT Manesar, Gurugram.',
 };
 
 export default function ContactPage() {
@@ -16,8 +16,7 @@ export default function ContactPage() {
             title: 'Email Us',
             description: 'Get in touch with our team directly',
             contacts: [
-                { label: 'Mr. Ananta Jena', value: 'ananta@futurenergy.co.in', href: 'mailto:ananta@futurenergy.co.in' },
-                { label: 'Mr. Vikas Chaudhary', value: 'vikas@futurenergy.co.in', href: 'mailto:vikas@futurenergy.co.in' },
+                { label: 'Mr. Ananta Jena', value: 'Info@futurenergy.co.in', href: 'mailto:Info@futurenergy.co.in' },
             ],
             icon: <HiMail className="w-8 h-8" />,
         },
@@ -34,11 +33,11 @@ export default function ContactPage() {
     return (
         <>
             <Hero
-                title="Let&apos;s Power Your Success Together"
+                title="Enquiry Form"
                 subtitle="Contact Us"
-                description="Have questions about our products or want to discuss partnership opportunities? We&apos;re here to help."
+                description="Fill out the form below to get in touch with us. We will get back to you as soon as possible."
                 primaryCTA="Send Email"
-                primaryHref="mailto:ananta@futurenergy.co.in"
+                primaryHref="mailto:Info@futurenergy.co.in"
                 secondaryCTA="View Location"
                 secondaryHref="#location"
             />
@@ -47,8 +46,8 @@ export default function ContactPage() {
                 <div className="container-custom">
                     <SectionHeader
                         subtitle="Get in Touch"
-                        title="We&apos;d Love to Hear From You"
-                        description="Reach out to us through any of the following channels. We typically respond within 24 hours."
+                        title="Enquiry Form"
+                        description="Fill out the form below to get in touch with us. We will get back to you as soon as possible."
                     />
 
                     <div className="grid md:grid-cols-2 gap-4 mb-8">
@@ -92,7 +91,7 @@ export default function ContactPage() {
                             </span>
 
                             <h2 className="text-3xl md:text-4xl font-bold text-energy-blue mb-4">
-                                Contact Form
+                                Enquiry Form
                             </h2>
 
                             <p className="text-gray-600 mb-8">
@@ -163,7 +162,6 @@ export default function ContactPage() {
                                     <select className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-energy-green focus:border-energy-green transition-colors bg-white">
                                         <option value="">Select a subject</option>
                                         <option value="product-inquiry">Product Inquiry</option>
-                                        <option value="partnership">Partnership Opportunity</option>
                                         <option value="quote">Request a Quote</option>
                                         <option value="support">Technical Support</option>
                                         <option value="other">Other</option>
@@ -217,8 +215,8 @@ export default function ContactPage() {
                                         </div>
                                         <div>
                                             <div className="font-semibold mb-1">Mr. Ananta Jena</div>
-                                            <a href="mailto:ananta@futurenergy.co.in" className="text-energy-orange hover:text-energy-orange-light transition-colors">
-                                                ananta@futurenergy.co.in
+                                            <a href="mailto:Info@futurenergy.co.in" className="text-energy-orange hover:text-energy-orange-light transition-colors">
+                                                Info@futurenergy.co.in
                                             </a>
                                             <p className="text-white/60 text-sm mt-1">Director - Production & R&D</p>
                                         </div>
@@ -229,8 +227,8 @@ export default function ContactPage() {
                                         </div>
                                         <div>
                                             <div className="font-semibold mb-1">Mr. Vikas Chaudhary</div>
-                                            <a href="mailto:vikas@futurenergy.co.in" className="text-energy-orange hover:text-energy-orange-light transition-colors">
-                                                vikas@futurenergy.co.in
+                                            <a href="mailto:Info@futurenergy.co.in" className="text-energy-orange hover:text-energy-orange-light transition-colors">
+                                                Info@futurenergy.co.in
                                             </a>
                                             <p className="text-white/60 text-sm mt-1">Director - Operations</p>
                                         </div>
@@ -303,11 +301,8 @@ export default function ContactPage() {
                                 </div>
                                 <div>
                                     <div className="font-semibold mb-1">Email Us</div>
-                                    <a href="mailto:ananta@futurenergy.co.in" className="text-energy-orange hover:text-energy-orange-light transition-colors text-sm block">
-                                        ananta@futurenergy.co.in
-                                    </a>
-                                    <a href="mailto:vikas@futurenergy.co.in" className="text-energy-orange hover:text-energy-orange-light transition-colors text-sm block">
-                                        vikas@futurenergy.co.in
+                                    <a href="mailto:Info@futurenergy.co.in" className="text-energy-orange hover:text-energy-orange-light transition-colors text-sm block">
+                                        Info@futurenergy.co.in
                                     </a>
                                 </div>
                             </div>

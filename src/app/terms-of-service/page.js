@@ -116,7 +116,7 @@ You may not:
 Our IT 700 technology is protected by patents. Any unauthorized use, reproduction, or infringement of our patented technology will be pursued under applicable intellectual property laws.
 
 **Reporting Infringement:**
-If you believe your intellectual property rights have been violated, please contact us at vikas@futurenergy.co.in with detailed information about the alleged infringement.`,
+If you believe your intellectual property rights have been violated, please contact us at Info@futurenergy.co.in with detailed information about the alleged infringement.`,
         },
         {
             id: 'limitation-liability',
@@ -247,12 +247,10 @@ IMT Manesar, Gurugram
 Haryana 122052, India
 
 **Email:**
-vikas@futurenergy.co.in
-ananta@futurenergy.co.in
-vikas@futurenergy.co.in
+Info@futurenergy.co.in
 
 **For Legal Inquiries:**
-Please write to us at vikas@futurenergy.co.in with the subject line "Legal Inquiry"
+Please write to us at Info@futurenergy.co.in with the subject line "Legal Inquiry"
 
 **Business Hours:**
 Monday to Saturday: 9:00 AM - 6:00 PM (IST)
@@ -451,13 +449,13 @@ These Terms, together with our Privacy Policy and any other legal notices publis
                                 </svg>
                             </Link>
                             <a
-                                href="mailto:vikas@futurenergy.co.in"
+                                href="mailto:Info@futurenergy.co.in"
                                 className="border-2 border-white text-white font-semibold px-8 py-4 rounded-lg hover:bg-white/10 transition-colors inline-flex items-center justify-center gap-2"
                             >
                                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                                 </svg>
-                                vikas@futurenergy.co.in
+                                Info@futurenergy.co.in
                             </a>
                         </div>
                     </div>
