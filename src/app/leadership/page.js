@@ -160,6 +160,104 @@ export default function LeadershipPage() {
                 </div>
             </section>
 
+            <section className="py-8 bg-gray-50">
+                <div className="container-custom">
+                    <SectionHeader
+                        subtitle="Core Team"
+                        title="Our Core Team"
+                        description="Meet the experts driving our operational excellence and strategic growth."
+                    />
+
+                    <div className="grid md:grid-cols-3 gap-12">
+                        {[
+                            {
+                                name: 'Mr. Sunil Sharma',
+                                expertise: [
+                                    'Leadership & Team Development',
+                                    'Strategic Planning & Execution',
+                                    'Operations Management',
+                                    'Supply Chain'
+                                ],
+                                image: '/t/mr-sunil-sharma.jpeg'
+                            },
+                            {
+                                name: 'Mr. Upender Singh',
+                                expertise: [
+                                    'Quality Management',
+                                    'Process Improvement',
+                                    'Technical Expertise',
+                                    'Battery Manufacturing'
+                                ],
+                                image: '/t/upender-singh.jpeg'
+                            },
+                            {
+                                name: 'Miss. Sapna Sharma',
+                                expertise: [
+                                    'Financial Reporting & Management',
+                                    'Auditing & Assurance',
+                                    'Corporate Finance',
+                                    'Taxation'
+                                ],
+                                image: '/t/sapna.webp'
+                            }
+                        ].map((member) => (
+                            <div key={member.name} className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300">
+                                <div className="relative h-96">
+                                    <Image
+                                        src={member.image}
+                                        alt={member.name}
+                                        fill
+                                        className="object-cover"
+                                    />
+                                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                                    <div className="absolute bottom-0 left-0 right-0 p-6">
+                                        <h3 className="text-xl font-bold text-white mb-1">
+                                            {member.name === 'Miss. Sapna Sharma' ? member.name : ''}
+                                        </h3>
+                                        {
+                                            member.name === 'Miss. Sapna Sharma' && (
+                                                <div className="h-1 w-12 bg-energy-orange rounded-full"></div>
+                                            )
+                                        }
+                                    </div>
+                                </div>
+                                <div className="p-6">
+                                    <h4 className="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-4">Area of Expertise</h4>
+                                    <div className="flex flex-wrap gap-2">
+                                        {member.expertise.map((skill, idx) => (
+                                            <span
+                                                key={idx}
+                                                className="inline-block px-3 py-1 bg-energy-blue/5 text-energy-blue text-xs font-medium rounded-lg"
+                                            >
+                                                {skill}
+                                            </span>
+                                        ))}
+                                    </div>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </section>
+
+            <section className="py-10 bg-energy-gradient text-white">
+                <div className="container-custom">
+                    <div className="text-center mb-12">
+                        <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Combined Excellence</h2>
+                        <p className="text-white/80 max-w-2xl mx-auto">Our leadership team&apos;s collective experience and achievements.</p>
+                    </div>
+
+                    <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+                        {experienceStats.map((stat) => (
+                            <div key={stat.label} className="bg-white/10 backdrop-blur-sm rounded-lg p-8 text-center hover:bg-white/20 transition-colors">
+                                <div className="text-4xl md:text-5xl font-bold text-energy-orange mb-2">{stat.value}</div>
+                                <div className="text-white/80 text-sm">{stat.label}</div>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </section>
+
             <section className="section-padding bg-gray-50">
                 <div className="container-custom">
                     <SectionHeader
@@ -185,55 +283,9 @@ export default function LeadershipPage() {
                 </div>
             </section>
 
-            <section className="py-10 bg-energy-gradient text-white">
-                <div className="container-custom">
-                    <div className="text-center mb-12">
-                        <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Combined Excellence</h2>
-                        <p className="text-white/80 max-w-2xl mx-auto">Our leadership team&apos;s collective experience and achievements.</p>
-                    </div>
 
-                    <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-                        {experienceStats.map((stat) => (
-                            <div key={stat.label} className="bg-white/10 backdrop-blur-sm rounded-lg p-8 text-center hover:bg-white/20 transition-colors">
-                                <div className="text-4xl md:text-5xl font-bold text-energy-orange mb-2">{stat.value}</div>
-                                <div className="text-white/80 text-sm">{stat.label}</div>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
 
-            <section className="py-10 bg-white">
-                <div className="container-custom">
-                    <SectionHeader
-                        subtitle="Our Team"
-                        title="The Future Energy Family"
-                        description="Behind every great product is a team of dedicated professionals working together towards a common goal."
-                    />
 
-                    <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                        {['/card1.jpg', '/card2.jpg', '/card3.jpg', '/card4.jpg'].map((img, index) => (
-                            <div
-                                key={index}
-                                className="relative rounded-lg overflow-hidden shadow-lg group aspect-square"
-                            >
-                                <Image
-                                    src={img}
-                                    alt={`Team ${index + 1}`}
-                                    fill
-                                    className="object-cover group-hover:scale-110 transition-transform duration-500"
-                                    sizes="(max-width: 768px) 50vw, 25vw"
-                                />
-                                <div className="absolute inset-0 bg-gradient-to-t from-energy-blue/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                            </div>
-                        ))}
-                    </div>
-
-                    <div className="text-center mt-8">
-                        <p className="text-gray-600 mb-6">200+ dedicated team members across manufacturing, R&D, sales, and support</p>
-                    </div>
-                </div>
-            </section>
 
             <CTA
                 title="Want to Join Our Team?"
