@@ -166,7 +166,7 @@ export default function ProductsPage() {
                                         alt={product.title}
                                         width={600}
                                         height={450}
-                                        className="w-full h-auto object-cover"
+                                        className="w-full h-[450px] md:h-[600px] object-cover"
                                     />
                                     <div className="absolute inset-0 bg-gradient-to-t from-energy-blue/30 to-transparent"></div>
                                 </div>

@@ -2,6 +2,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import WhatsAppButton from "@/components/WhatsAppButton";
 
 // Custom fonts
 const geistSans = localFont({
@@ -110,6 +111,9 @@ export default function RootLayout({ children }) {
 
         {/* Footer */}
         <Footer />
+
+        {/* Floating WhatsApp Button */}
+        <WhatsAppButton />
       </body>
     </html>
   );
