@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Hero from '@/components/Hero';
 import SectionHeader from '@/components/SectionHeader';
 import { HiMail, HiLocationMarker, HiGlobeAlt } from 'react-icons/hi';
+import { User } from 'lucide-react';
 
 export const metadata = {
     title: 'Enquiry Form',
@@ -16,7 +17,7 @@ export default function ContactPage() {
             title: 'Email Us',
             description: 'Get in touch with our team directly',
             contacts: [
-                { label: 'Mr. Ananta Jena', value: 'Info@futurenergy.co.in', href: 'mailto:Info@futurenergy.co.in' },
+                { value: 'Info@futurenergy.co.in', href: 'mailto:Info@futurenergy.co.in' },
             ],
             icon: <HiMail className="w-8 h-8" />,
         },
@@ -64,7 +65,7 @@ export default function ContactPage() {
                                 <div className="space-y-4">
                                     {method.contacts.map((contact, idx) => (
                                         <div key={idx}>
-                                            <div className="text-sm text-gray-500 mb-1">{contact.label}</div>
+
                                             <a
                                                 href={contact.href}
                                                 className="text-energy-green hover:text-energy-green-dark font-medium transition-colors break-all"
@@ -211,25 +212,21 @@ export default function ContactPage() {
                                 <div className="space-y-6">
                                     <div className="flex items-start gap-4">
                                         <div className="w-12 h-12 bg-white/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                                            <HiMail className="w-6 h-6" />
+                                            <User className="w-6 h-6" />
                                         </div>
                                         <div>
                                             <div className="font-semibold mb-1">Mr. Ananta Jena</div>
-                                            <a href="mailto:Info@futurenergy.co.in" className="text-energy-orange hover:text-energy-orange-light transition-colors">
-                                                Info@futurenergy.co.in
-                                            </a>
+
                                             <p className="text-white/60 text-sm mt-1">Director - Production & R&D</p>
                                         </div>
                                     </div>
                                     <div className="flex items-start gap-4">
                                         <div className="w-12 h-12 bg-white/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                                            <HiMail className="w-6 h-6" />
+                                            <User className="w-6 h-6" />
                                         </div>
                                         <div>
                                             <div className="font-semibold mb-1">Mr. Vikas Chaudhary</div>
-                                            <a href="mailto:Info@futurenergy.co.in" className="text-energy-orange hover:text-energy-orange-light transition-colors">
-                                                Info@futurenergy.co.in
-                                            </a>
+
                                             <p className="text-white/60 text-sm mt-1">Director - Operations</p>
                                         </div>
                                     </div>

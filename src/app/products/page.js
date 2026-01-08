@@ -314,7 +314,7 @@ export default function ProductsPage() {
 
                             <div className="relative hidden lg:block">
                                 <Image
-                                    src="/card8.jpg"
+                                    src="/it.png"
                                     alt="IT 700 Patent Product"
                                     fill
                                     className="object-cover"

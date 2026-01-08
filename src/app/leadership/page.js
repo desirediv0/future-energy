@@ -17,7 +17,6 @@ export default function LeadershipPage() {
             experience: '30+ Years Experience',
             bio: 'A visionary leader with over three decades of expertise in battery production and research & development. Mr. Jena has been instrumental in establishing Future Energy\'s manufacturing excellence and driving innovation through the patented IT 700 technology.',
             expertise: ['Battery Manufacturing', 'R&D Leadership', 'Quality Management', 'Process Optimization'],
-            email: 'Info@futurenergy.co.in',
             image: '/profile2.png',
         },
         {
@@ -26,7 +25,6 @@ export default function LeadershipPage() {
             experience: '20+ Years Experience',
             bio: 'An accomplished professional with two decades of experience in battery manufacturing and operations. Mr. Chaudhary oversees the company\'s manufacturing operations, supply chain, and international business development.',
             expertise: ['Operations Management', 'Supply Chain', 'Business Development', 'International Trade'],
-            email: 'Info@futurenergy.co.in',
             image: '/profile1.png',
         },
     ];
@@ -155,16 +153,6 @@ export default function LeadershipPage() {
                                             ))}
                                         </div>
                                     </div>
-
-                                    <a
-                                        href={`mailto:${leader.email}`}
-                                        className="inline-flex items-center gap-2 text-energy-green hover:text-energy-green-dark font-medium transition-colors"
-                                    >
-                                        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                                        </svg>
-                                        {leader.email}
-                                    </a>
                                 </div>
                             </div>
                         ))}

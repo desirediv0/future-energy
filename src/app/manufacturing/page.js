@@ -109,7 +109,7 @@ export default function ManufacturingPage() {
                         <div className="relative">
                             <div className="rounded-lg overflow-hidden shadow-2xl">
                                 <Image
-                                    src="/card2.jpg"
+                                    src="/card1.jpg"
                                     alt="Future Energy Manufacturing Plant"
                                     width={600}
                                     height={450}
