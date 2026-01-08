@@ -20,7 +20,7 @@ export default function ProductsPage() {
             tagline: 'Power Your Journey',
             description:
                 'High-performance batteries designed for all vehicle types. Our automotive batteries deliver reliable starting power, extended life, and maintenance-free operation for cars, trucks, and commercial vehicles.',
-            image: '/card4.jpg',
+            image: '/p/automotive-batteries.jpg',
             features: [
                 'High Cold Cranking Amps (CCA)',
                 'Vibration Resistant Design',
@@ -36,7 +36,7 @@ export default function ProductsPage() {
             tagline: 'Uninterrupted Power',
             description:
                 'Reliable power backup solutions for homes and businesses. Our inverter batteries provide long backup hours, fast charging, and superior deep cycle performance for uninterrupted power supply.',
-            image: '/card5.jpg',
+            image: '/p/inverter-inverter-batteries.jpg',
             features: [
                 'Deep Cycle Design',
                 'Fast Charging Capability',
@@ -52,7 +52,7 @@ export default function ProductsPage() {
             tagline: 'Stable Power Always',
             description:
                 'Protect your valuable appliances from voltage fluctuations. Our stabilizers ensure consistent, clean power delivery, safeguarding your electronic equipment and extending their lifespan.',
-            image: '/card6.jpg',
+            image: '/p/stabilizers.jpg',
             features: [
                 'Wide Input Voltage Range',
                 'Instant Correction',
@@ -68,7 +68,7 @@ export default function ProductsPage() {
             tagline: 'Harness the Sun',
             description:
                 'Sustainable energy solutions for modern homes. Our residential solar systems help you reduce electricity bills, minimize carbon footprint, and achieve energy independence with clean, renewable power.',
-            image: '/card7.jpg',
+            image: '/p/residential-solar-solutions.jpg',
             features: [
                 'High Efficiency Panels',
                 'Smart Monitoring',
@@ -84,7 +84,7 @@ export default function ProductsPage() {
             tagline: 'Industrial Strength',
             description:
                 'Industrial-grade batteries ranging from 12V40Ah to 12V500Ah. Our lead acid batteries are engineered for demanding applications requiring reliable, high-capacity energy storage.',
-            image: '/card8.jpg',
+            image: '/p/lead-acid-batteries.jpg',
             features: [
                 'Wide Capacity Range (40Ah-500Ah)',
                 'VRLA & Flooded Options',
@@ -100,7 +100,7 @@ export default function ProductsPage() {
             tagline: 'Advanced Energy Storage',
             description:
                 'State-of-the-art Lithium batteries available in 48V and 51.2V configurations. Choose from 100Ah, 150Ah, and 200Ah capacities for efficient, long-lasting energy storage.',
-            image: '/card5.jpg',
+            image: '/p/lithium-batteries.jpg',
             features: [
                 '48V & 51.2V Voltage Options',
                 '100Ah, 150Ah, 200Ah Capacities',
